@@ -2,7 +2,17 @@ import React from "react";
 import { Fragment } from "react";
 import Container from "@material-ui/core/Container";
 import "./products.css";
+import fp8 from '../../assets/12.png'
+import fp9 from  '../../assets/30.png'
+import fp10 from  '../../assets/31.png'
+import fp11 from  '../../assets/32.png'
+import fp12 from  '../../assets/23.png'
+import fp13 from  '../../assets/19.png'
+
 import Logo from "./../../assets/logo1.jpeg";
+// "Your new entry will create the first impression of your home.
+//                 Whether homeowner builder, architect or designer, let Amso
+//                 Impex' passion for beautiful products help you on your journey."
 
 const Products = () => {
   return (
@@ -12,18 +22,17 @@ const Products = () => {
           <div className="contact-heading">
             <h2>Our featured Products</h2>
           </div>
-          <div className="card w-[600px] mx-3 bg-base-100 shadow-xl">
-  <div className="card-body justify-center mx-2">
-    <p className="text-xl font-semibold justify-center">  "Your new entry will create the first impression of your home.
-            Whether homeowner builder, architect or designer, let Amso Impex'
-            passion for beautiful products help you on your journey."</p>
-    
-  </div>
-</div>
+          <div className="card w-[600px] mx-3 bg-base-100 shadow-xl justify-center items-center">
+            <div className="card-body justify-center items-center ">
+              <p className="text-xl font-semibold justify-center">
+                {" "}
+                "Your new entry will create the first impression of your home.
+                Whether homeowner builder, architect or designer, let Amso
+                Impex' passion for beautiful products help you on your journey."
+              </p>
+            </div>
+          </div>
           
-            
-            
-         
           <p className="text-2xl font-semibold mt-3">
             Our products are Hand-Crafted with the finest steel, exterior
             artisian paints and engineered glass
@@ -34,77 +43,74 @@ const Products = () => {
               <figure>
                 <img
                   className="z-2"
-                  src="https://placeimg.com/400/225/arch"
+                  src={fp8}
                   alt="Shoes"
                 />
               </figure>
               <div className="card-body">
                 <h2 className="card-title z-10">Contemporary Iron Doors</h2>
                 <div className="card-actions justify-end">
-                  <a className="link link-hover">See More</a>{" "}
+                  <a className="link link-hover rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400">See More</a>{" "}
                 </div>
               </div>
             </div>
             <div className="card w-96 bg-base-100 shadow-xl image-full relative">
               <figure>
-                <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                <img src={fp9} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Classic Iron Doors</h2>
                 <div className="card-actions justify-end">
-                  <a className="link link-hover">See More</a>{" "}
+                  <a className="link link-hover rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400">See More</a>{" "}
                 </div>
               </div>
             </div>
             <div className="card w-96 bg-base-100 shadow-xl image-full relative">
               <figure>
-                <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                <img src={fp10} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Iron Gates and Fences</h2>
                 <div className="card-actions justify-end">
-                  <a className="link link-hover">See More</a>{" "}
+                  <a className="link link-hover rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400">See More</a>{" "}
                 </div>
               </div>
             </div>
             <div className="card w-96 bg-base-100 shadow-xl image-full relative">
               <figure>
-                <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                <img src={fp11} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Double Iron Doors</h2>
                 <div className="card-actions justify-end">
-                  <a className="link link-hover">See More</a>{" "}
+                  <a className="link link-hover rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400">See More</a>{" "}
                 </div>
               </div>
             </div>
             <div className="card w-96 bg-base-100 shadow-xl image-full relative">
               <figure>
-                <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                <img src={fp12} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Custom Iron Products</h2>
                 <div className="card-actions justify-end">
-                  <a className="link link-hover">See More</a>{" "}
+                  <a className="link link-hover rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400">See More</a>{" "}
                 </div>
               </div>
             </div>
             <div className="card w-96 bg-base-100 shadow-xl image-full relative">
               <figure>
-                <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                <img src={fp13} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Single Iron Doors</h2>
                 <div className="card-actions justify-end">
-                  <a href="/product" className="link link-hover">
+                  <a href="/product" className="ml-2 link link-hover navbar-center rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400">
                     See More
                   </a>{" "}
                 </div>
               </div>
             </div>
-          </div>
-          <div className="hero min-h-screen">
-            <img src={Logo} />
           </div>
         </section>
       </Fragment>

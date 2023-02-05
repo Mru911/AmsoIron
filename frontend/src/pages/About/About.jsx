@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
 import Container from "@material-ui/core/Container";
-import Img4 from './../../assets/14.png'
-import Img5 from './../../assets/13.png'
+import Img4 from "./../../assets/14.png";
+import Img5 from "./../../assets/13.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { EffectFade, Autoplay } from "swiper";
 
-import Img6 from './../../assets/12.png'
+import Img6 from "./../../assets/12.png";
 
 import { Link } from "react-router-dom";
 const Slides = [
@@ -22,7 +22,6 @@ const Slides = [
   },
 ];
 const About = () => {
-
   return (
     <Container className=" mt-7 mb-5">
       <Fragment>
@@ -91,37 +90,39 @@ const About = () => {
                 <h1 className="text-2xl font-bold">
                   High quality projects for your satisfaction
                 </h1>
-                <Swiper modules={[EffectFade,Autoplay]} effect={'fade '} loop={true} 
-    autoplay={{
-      delay:3000,
-      disableOnInteraction: false,
-   
-    }}
-    className="heroSlider h-[500px] lg:h-[560px] bg">
-      {Slides.map((slide, index) => {
-        const { title, bg, btnText } = slide;
-        return (
-          <SwiperSlide
-            className="h-full  relative flex justify-center items-center"
-            key={index}
-          >
-            <div className="z-20 text-white text-center">
-              
-              
-              <div className="absolute top-0 w-full h-full ">
-                <img className="object-cover h-full w-full" src={bg} alt="" />
-              </div>
-            </div>
-          
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
+                <div className="projects">
+                <div className="carousel w-full">
+  <div id="slide1" className="carousel-item relative w-full">
+    <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" className="btn btn-circle">❮</a> 
+      <a href="#slide2" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" className="carousel-item relative w-full">
+    <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" className="btn btn-circle">❮</a> 
+      <a href="#slide3" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" className="carousel-item relative w-full">
+    <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" className="btn btn-circle">❮</a> 
+      <a href="#slide4" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" className="carousel-item relative w-full">
+    <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" className="btn btn-circle">❮</a> 
+      <a href="#slide1" className="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+</div>
 
-
-
-
-                
                 <Link to="/products" className="btn mt-3">
                   Explore More
                 </Link>

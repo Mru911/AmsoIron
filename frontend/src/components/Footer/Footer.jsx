@@ -14,8 +14,8 @@ const Footer = () => {
   </div> 
   <div>
     <span className="footer-title">Amso Impex</span> 
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
+    <a href='/about' className="link link-hover">About us</a> 
+    <a href='/contact' className="link link-hover">Contact</a> 
     <a className="link link-hover">Terms Of Policy</a> 
     {/* <a className="link link-hover">Press kit</a> */}
   </div> 

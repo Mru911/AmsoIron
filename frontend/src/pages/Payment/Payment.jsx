@@ -1,78 +1,60 @@
-import React from "react";
+import React from 'react'
+import Container from "@material-ui/core/Container";
+import TextField from "@material-ui/core/TextField";
 
 const Payment = () => {
-  function isDate(val) {
-    // Cross realm comptatible
-    return Object.prototype.toString.call(val) === "[object Date]";
-  }
-
-  function isObj(val) {
-    return typeof val === "object";
-  }
-
-  function stringifyValue(val) {
-    if (isObj(val) && !isDate(val)) {
-      return JSON.stringify(val);
-    } else {
-      return val;
-    }
-  }
-
-  function buildForm({ action, params }) {
-    const form = document.createElement("form");
-    form.setAttribute("method", "post");
-    form.setAttribute("action", action);
-
-    Object.keys(params).forEach((key) => {
-      const input = document.createElement("input");
-      input.setAttribute("type", "hidden");
-      input.setAttribute("name", key);
-      input.setAttribute("value", stringifyValue(params[key]));
-      form.appendChild(input);
-    });
-
-    return form;
-  }
-
-  function post(details) {
-    const form = buildForm(details);
-    document.body.appendChild(form);
-    form.submit();
-    form.remove();
-  }
-
-  const getData = (data) => {
-    return fetch(`http://localhost:5000/api/payment`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .catch((err) => console.log(err));
-  };
-
-  const makePayment = () => {
-    getData({ amount: 500, email: "abc@gmail.com" }).then((response) => {
-      var information = {
-        action: "https://securegw-stage.paytm.in/order/process",
-        params: response,
-      };
-      post(information);
-    });
-  };
   return (
-    <div>
-      <button
-        className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-        onClick={makePayment}
-      >
-        PAY USING PAYTM
-      </button>
-    </div>
-  );
-};
+    <Container className='payment'>
+        <form action="#">
+                      <TextField
+                        className="formmrug1"
+                        label=" Full Name"
+                        name="name"
+                        margin="normal"
+                        required
+                        variant="outlined"
+                        autoComplete="off"
+                        fullWidth
+                      />
+                      <TextField
+                        className="formmrug1"
+                        label="Address"
+                        name="address"
+                        margin="normal"
+                        required
+                        variant="outlined"
+                        autoComplete="off"
+                        fullWidth
+                      />
+                        <TextField
+                        className="formmrug1"
+                        label="Contact"
+                        name="contact"
+                        margin="normal"
+                        required
+                        variant="outlined"
+                        autoComplete="off"
+                        fullWidth
+                      /><TextField
+                      className="formmrug1"
+                      label="Amount"
+                      name="amount"
+                      margin="normal"
+                      required
+                      variant="outlined"
+                      autoComplete="off"
+                      fullWidth
+                    />
+                      
 
-export default Payment;
+                      </form>
+                      <button className="btn btn-outline">Pay Now </button>
+
+
+        
+    </Container>
+    
+  )
+}
+
+export default Payment

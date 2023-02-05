@@ -6,7 +6,7 @@ const Content = () => {
       <div className="container">
         <div className="hero mt-3">
           <div className="hero-content">
-            <div className="max-w-md">
+            <div className="max-w-md mt-3">
               <h1 className="text-5xl font-bold">Why Iron Doors?</h1>
               <p className="px-6 py-10 text-2.5xl font-medium">
                 Since the 1850s, doors and windows have been made from
@@ -41,16 +41,25 @@ const Content = () => {
                 of our clients to make sure their wrought iron project meets all
                 of their needs.
               </p>
-              <div className="card w-196 h-[350px] bg-base-100 shadow-xl image-full">
-  <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title text-center justify-center font-bold text-xl">Quality Products</h2>
-    <p className="py-6 px-2 font-medium text-lg">We design and manufacture the finest handcrafted iron entry doors & estate gates. <br /> We are successful in providing our customers with personal detailed service & beautiful quality products </p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary ">Have a tour </button>
-    </div>
-  </div>
-</div>
+              <div className="card w-196 h-[350px] bg-base-700 shadow-xl image-full">
+                <figure>
+                <img src={require('./pr1.png')}/>
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title text-center justify-center font-bold text-xl text-gray-50">
+                    Quality Products
+                  </h2>
+                  <p className="py-6 px-2 font-medium text-lg text-gray-50">
+                    We design and manufacture the finest handcrafted iron entry
+                    doors & estate gates. <br /> We are successful in providing
+                    our customers with personal detailed service & beautiful
+                    quality products{" "}
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary ">Have a tour </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -58,8 +67,24 @@ const Content = () => {
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Finely Handcrafted</h1>
-              <p className="py-8"></p>
-              <button className="btn btn-primary">Get Started</button>
+              <p className="py-8">
+                {" "}
+                We focus on extremely fine crafted metal works and the way to
+                meet your desired form to make it suit perfectly for your house
+                or any time of architecture.The skills of worker and their compation towards artistic form is considered on priority We promise you to fulfill your expectations.{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="hero top-1 ">
+          <div className="hero-content text-center">
+            <div className="max-w-md">
+              <h1 className="text-5xl font-bold">Your Thoughts Into Reality</h1>
+              <p className="py-8">
+                Select a Standard configuration or draw your own.The possibilities are only limited by your imagination. We accept any type of reference ideas and <b> willing to turn them into reality.</b>
+
+
+              </p>
             </div>
           </div>
         </div>

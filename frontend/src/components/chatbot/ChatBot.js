@@ -10,11 +10,10 @@ export class ChatBot extends Component {
         var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
         window.kommunicate = m; m._globals = kommunicateSettings;
     })(document, window.kommunicate || {});
-/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     }
   render() {
     return (
-      <div>chatbot</div>
+      <div></div>
     )
   }
 }
