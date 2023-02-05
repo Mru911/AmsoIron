@@ -41,7 +41,7 @@ const Content = () => {
                 of our clients to make sure their wrought iron project meets all
                 of their needs.
               </p>
-              <div className="card w-196 h-[350px] bg-base-700 shadow-xl image-full">
+              <div className="card w-196 h-[350px] bg-base-700 shadow-2xl image-full">
                 <figure>
                 <img src={require('./pr1.png')}/>
                 </figure>
@@ -56,7 +56,7 @@ const Content = () => {
                     quality products{" "}
                   </p>
                   <div className="card-actions justify-end">
-                    <button className="btn btn-primary ">Have a tour </button>
+                    <a href="/products" className="btn btn-primary ">Have a tour </a>
                   </div>
                 </div>
               </div>
