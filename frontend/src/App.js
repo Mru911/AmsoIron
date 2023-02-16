@@ -9,11 +9,14 @@ import Products from "./pages/Products/Products";
 import Contact from './pages/Contact/Contact';
 import Payment from './pages/Payment/Payment';
 import ChatBot from './components/chatbot/ChatBot';
+import Whatsapp from './components/whatsapp/Whatsapp';
+import Faq from './pages/Faq/Faq';
 
 
 const Layout=()=>{
   return(
     <div className="iron1">
+      <Whatsapp/>
       <Navbar/>
       <Outlet/>
       <Footer/>
@@ -50,6 +53,10 @@ const router = createBrowserRouter([
         path:"/payment",
           element:<Payment/>
         },
+        {
+          path:"/faq",
+            element:<Faq/>
+          },
   ]
   },
   
@@ -61,6 +68,7 @@ function App() {
     <div className="App">
      <RouterProvider router={router}/>
      <ChatBot/>
+     {/* <Faq/> */}
     </div>
   );
 }

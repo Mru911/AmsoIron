@@ -13,11 +13,11 @@ const Footer = () => {
     <a className="link link-hover">Hand Crafted</a>
   </div> 
   <div>
-    <span className="footer-title">Amso Impex</span> 
+    <span className="footer-title text-2xl font-bold">Amso Impex</span> 
     <a href='/about' className="link link-hover">About us</a> 
     <a href='/contact' className="link link-hover">Contact</a> 
     <a className="link link-hover">Terms Of Policy</a> 
-    {/* <a className="link link-hover">Press kit</a> */}
+    <a href='/faq' className="link link-hover">FAQ's</a>
   </div> 
   <div>
     <span className="footer-title">Social</span> 

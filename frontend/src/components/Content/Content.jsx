@@ -1,4 +1,12 @@
 import React from "react";
+import year from './../../assets/year1.jpg'
+import one from './../../assets/one1.jfif'
+import gauge from './../../assets/gauge.png'
+import impact from './../../assets/impact2.png'
+
+
+
+
 
 const Content = () => {
   return (
@@ -88,6 +96,18 @@ const Content = () => {
             </div>
           </div>
         </div>
+        <hr className="border-slate-500 ml-[5rem] w-[84rem]"/>
+        <div className="hero mt-2">
+          <div className="grid grid-cols-4 gap-x-1 ">
+            <img src={year} alt="" />
+            <img className="mt-10" src={one} alt="" />
+            <img className="mt-[6rem] ml-2 h-[90px]" src={gauge} alt="" />
+            <img className="h-[150px] mt-[5rem]" src={impact} alt="" />
+          </div>
+         
+        </div>
+        <hr className="border-slate-500 ml-[5rem] w-[84rem]"/>
+
       </div>
     </div>
   );

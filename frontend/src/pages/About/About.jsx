@@ -1,13 +1,15 @@
 import React, { Fragment } from "react";
 import Container from "@material-ui/core/Container";
-import Img4 from "./../../assets/14.png";
+import Img4 from "./../../assets/30.png";
 import Img5 from "./../../assets/13.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { EffectFade, Autoplay } from "swiper";
+import doorAnimation from "./../../assets/animation/94725-door-open.json";
+import Lottie from "lottie-react";
 
-import Img6 from "./../../assets/12.png";
+import Img6 from "./../../assets/14.png";
 
 import { Link } from "react-router-dom";
 const Slides = [
@@ -33,7 +35,7 @@ const About = () => {
             <div className="max-w-xl">
               <p className="font-medium text-base">
                 If you value quality craftsmanship and relentless attention to
-                detail,Amso Impex irpn works are the right choice. Whether
+                detail,Amso Impex iron works are the right choice. Whether
                 selecting one of our beautiful styles or creating a new work of
                 art ,you will find that our passion is found in professional
                 service,timeliness and uncompromising quality{" "}
@@ -90,8 +92,43 @@ const About = () => {
                 <h1 className="text-2xl font-bold">
                   High quality projects for your satisfaction
                 </h1>
-                <div className="projects">
-                  <div className="carousel w-full">
+
+                <div className="carousel w-full">
+                  <div id="item1" className="carousel-item w-full">
+                    <img
+                      src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+                      className="w-full"
+                    />
+                  </div>
+                  <div id="item2" className="carousel-item w-full">
+                    <img
+                      src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                      className="w-full"
+                    />
+                  </div>
+                  <div id="item3" className="carousel-item w-full">
+                    <img
+                      src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
+                      className="w-full"
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center w-full py-2 gap-2">
+                  <a href="#item1" className="btn btn-xs">
+                    1
+                  </a>
+                  <a href="#item2" className="btn btn-xs">
+                    2
+                  </a>
+                  <a href="#item3" className="btn btn-xs">
+                    3
+                  </a>
+                </div>
+
+                <Lottie animationData={doorAnimation} loop={true} />
+
+                {/* <div className="projects ">
+                  <div className="carousel w-[30rem] h-[30rem]">
                     <div id="slide1" className="carousel-item relative w-full">
                       <img
                         src={Img6}
@@ -108,7 +145,7 @@ const About = () => {
                     </div>
                     <div id="slide2" className="carousel-item relative w-full">
                       <img
-                        src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                        src={Img4}
                         className="w-full"
                       />
                       <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -122,7 +159,7 @@ const About = () => {
                     </div>
                     <div id="slide3" className="carousel-item relative w-full">
                       <img
-                        src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
+                        src={Img5}
                         className="w-full"
                       />
                       <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -134,22 +171,9 @@ const About = () => {
                         </a>
                       </div>
                     </div>
-                    <div id="slide4" className="carousel-item relative w-full">
-                      <img
-                        src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-                        className="w-full"
-                      />
-                      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" className="btn btn-circle">
-                          ❮
-                        </a>
-                        <a href="#slide1" className="btn btn-circle">
-                          ❯
-                        </a>
-                      </div>
-                    </div>
+                    
                   </div>
-                </div>
+                </div> */}
 
                 <Link to="/products" className="btn mt-3">
                   Explore More

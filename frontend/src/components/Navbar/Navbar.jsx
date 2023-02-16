@@ -1,28 +1,31 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import About from '../../pages/About/About';
-import Products from '../../pages/Products/Products';
-import Product from '../../pages/Product/Product';
-import Contact from '../../pages/Contact/Contact';
-import Home from '../../pages/Home/Home';
-import payment from '../../pages/Payment/Payment'
-import logo from '../../assets/logo2.png'
-import './navbar.css'
+import About from "../../pages/About/About";
+import Products from "../../pages/Products/Products";
+import Product from "../../pages/Product/Product";
+import Contact from "../../pages/Contact/Contact";
+import Home from "../../pages/Home/Home";
+import payment from "../../pages/Payment/Payment";
+import logo from "../../assets/logo2.png";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 ">
+      <div className="navbar bg-base-400 mt-0 ">
         <div className="navbar-start">
-        {/* <img className="mask mask-squircle" src="/images/stock/photo-1567653418876-5bb0e566e1c2.jpg" /> */}
-           <div className="logo">
-          <img className=" h-[70px] w-[100px]" src={require('./../../assets/logo3.png')} />          </div>
-          <a className="btn btn-ghost normal-case text-xl">AMSO IMPEX</a>
+          {/* <img className="mask mask-squircle" src="/images/stock/photo-1567653418876-5bb0e566e1c2.jpg" /> */}
+          <div className="logo">
+            <img
+              className=" w-[15rem]"
+              src={require("./../../assets/logo5.jpeg")}
+            />{" "}
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-            <Link  to="/">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li tabIndex={0}>
               <Link to="/products">
@@ -37,7 +40,7 @@ const Navbar = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link>
-              <ul className="p-2 z-10 font-bold bg-slate-200 border-2	" >
+              <ul className="p-2 z-10 font-bold bg-slate-200 border-2	">
                 <li>
                   <Link to="/product">Single Doors</Link>
                 </li>
@@ -45,11 +48,11 @@ const Navbar = () => {
                   <Link to="/product"> Double Doors</Link>
                 </li>
                 <li>
-                    <Link to="/product">Classic iron Door</Link>
-                  </li>
-                  <li>
-                    <Link to="/product">Contempary iron Door</Link>
-                  </li>
+                  <Link to="/product">Classic iron Door</Link>
+                </li>
+                <li>
+                  <Link to="/product">Contempary iron Door</Link>
+                </li>
               </ul>
             </li>
             <li>
@@ -58,10 +61,15 @@ const Navbar = () => {
             <li>
               <Link to="/contact">Contact Us</Link>
             </li>
+            <li>
+              <Link to="/faq">FAQ's</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/payment" className="btn">Get a Free Quote</Link>
+          <Link to="/payment" className="btn">
+            Get a Free Quote
+          </Link>
         </div>
       </div>
     </div>
@@ -104,7 +112,6 @@ export default Navbar;
 
 // <a className="btn btn-ghost items-center text-2xl ml-0 uppercase ">Amso Impex</a>
 
-
 //           <a href="/" className="hover:text-amber-200 transition">
 //             Home
 //           </a>
@@ -139,18 +146,15 @@ export default Navbar;
 //           <a href="/contact" className="hover:text-amber-200 transition">
 //             Contact Us
 //           </a>
-          
-         
+
 // <a href="/payment" class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get a Free Quote</a>
 
-
 //         </nav>
-        
-      
+
 //       </div>
-      
+
 //     </header>
-      
+
 //     </>
 //   );
 // };
