@@ -33,17 +33,14 @@ const About = () => {
           </div>
           <div className="hero-content text-center">
             <div className="max-w-xl">
-              <p className="font-medium text-base">
-                If you value quality craftsmanship and relentless attention to
-                detail,Amso Impex iron works are the right choice. Whether
-                selecting one of our beautiful styles or creating a new work of
-                art ,you will find that our passion is found in professional
-                service,timeliness and uncompromising quality{" "}
+              <p className="font-medium  text-xl ">
+                Established in 2020 Amso Impex is a Iron Works manufacturing company which provides hand-crafted doors and gates 
+                with tema of 37 highly skilled metal workers and iron forgers.
               </p>
             </div>
           </div>
-          <div className="mission flex flex-col-2 gap-3.5 justify-center">
-            <div className="card w-96 bg-base-100 shadow-xl justify-center items-center">
+          <div className="mission flex flex-col-2 gap-3.5 justify-center mt-3">
+            <div className="card w-96 bg-slate-400 adow-xl justify-center items-center  ">
               <div className="card-body justify-center">
                 <h2 className="card-title justify-center">Our Mission </h2>
                 <p>
@@ -54,7 +51,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card w-96 bg-slate-400 shadow-xl text-md">
               <div class="card-body">
                 <h2 class="card-title justify-center">What we Do</h2>
                 <p>
@@ -92,40 +89,25 @@ const About = () => {
                 <h1 className="text-2xl font-bold">
                   High quality projects for your satisfaction
                 </h1>
-
-                <div className="carousel w-full">
-                  <div id="item1" className="carousel-item w-full">
-                    <img
-                      src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-                      className="w-full"
-                    />
-                  </div>
-                  <div id="item2" className="carousel-item w-full">
-                    <img
-                      src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-                      className="w-full"
-                    />
-                  </div>
-                  <div id="item3" className="carousel-item w-full">
-                    <img
-                      src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
-                      className="w-full"
-                    />
+                <div class="card w-98 mt-5  shadow-xl ml-[4rem] bg-slate-300">
+                  <div class="card-body text-xl  font-semibold na navbar-center ">
+                    {" "}
+                    <p>
+                      If you value quality craftsmanship and relentless
+                      attention to detail, Amso Impex iron works are the right
+                      choice. Whether selecting one of our beautiful styles or
+                      creating a new work of art. you will find that our passion
+                      is found in professional service, timeliness and
+                      uncompromising quality.
+                    </p>
                   </div>
                 </div>
-                <div className="flex justify-center w-full py-2 gap-2">
-                  <a href="#item1" className="btn btn-xs">
-                    1
-                  </a>
-                  <a href="#item2" className="btn btn-xs">
-                    2
-                  </a>
-                  <a href="#item3" className="btn btn-xs">
-                    3
-                  </a>
-                </div>
 
-                <Lottie animationData={doorAnimation} loop={true} />
+                <Lottie
+                  className="h-[30rem]"
+                  animationData={doorAnimation}
+                  loop={true}
+                />
 
                 {/* <div className="projects ">
                   <div className="carousel w-[30rem] h-[30rem]">

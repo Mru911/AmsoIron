@@ -4,7 +4,7 @@ import con1 from "./../../assets/conten.jpg";
 const ContactCon = () => {
   return (
     <div>
-      <div
+      {/* <div
         className="hero ml-9 mb-4 h-[300px] w-[90rem] items-center rounded-xl mt-5"
         style={{
           backgroundImage: { con1 },
@@ -24,16 +24,16 @@ const ContactCon = () => {
             </a>
           </div>
         </div>
-      </div>
-      {/* <div className="card ml-9 mb-4 w-196 h-[350px] bg-base-200 shadow-2xl ">
+      </div> */}
+      <div className="card ml-9 mb-[3rem] w-[90rem] h-[300px] bg-base-200 shadow-2xl mt-[3rem] ">
         <figure className="object-fill  ">
-          <img className="h-[1000px] w-[700px]" src={con1} />
+          {/* <img className="h-[1000px] w-[700px]" src={con1} /> */}
         </figure>
-        <div className="card-body">
-          <h2 className="card-title text-center justify-center font-md text-md text-gray-50 mb-6">
+        <div className="card-body bg-slate-400">
+          <h2 className="card-title text-center justify-center font-md text-md text-black mb-6">
             Its our pleasure to deliver the exact product you have imagined...
           </h2>
-          <p className="py-6 px-2 font-medium text-3xl text-gray-100">
+          <p className="py-6 px-2 font-medium text-3xl text-black">
             Contact Us For Your Specific Requirement
           </p>
           <div className="">
@@ -41,8 +41,8 @@ const ContactCon = () => {
               Contact Us
             </a>
           </div>
-        </div> */}
-      {/* </div> */}
+        </div> 
+       </div>
     </div>
   );
 };

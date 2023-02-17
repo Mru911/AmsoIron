@@ -1,11 +1,33 @@
-import React, { Fragment, useRef } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
 import catalog from "./../../assets/amosImpex.pdf";
 
+const Result = (props) =>{
+  return(
+    <p>Your message is sent successfully. We will contact You soon.</p>
+  )
+
+}
+
 const Faq = () => {
+  const [result,showResult]=useState();
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_p7l3nur', 'template_rs1isr6', form.current, 'XcySmgUQwU5EjNGdn')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset();
+      showResult(true);
+  };
   
 
   
@@ -44,14 +66,15 @@ const Faq = () => {
                     </label>
                     <p className="py-4">
                       <div className="formf">
-                        <form>
-                          <h2 className="text-xl font-semibold"> To Download Catalog</h2>
-                          <label className="text-xl font-semibold"> Full Name</label>
+                      <h2 className="text-xl font-bold mt-0"> To Download Catalog</h2>
+
+                        <form ref={form} onSubmit={sendEmail}>
                           <input className="formmrug  border-black " type="text" name="user_name" placeholder="Your Full Name" />
-                          <label className="text-xl font-semibold">Email</label>
                           <input className="formmrug border-black" type="email" name="user_email" placeholder="Email Id" />
 
+                          <textarea name="message" id="" cols="10" rows="5" placeholder="Some message to company"> </textarea>
                           <input className="btn btn-primary border-black" type="submit" value="Send" />
+                          <div className="row">{result ?  <Result/>: null }</div>
                         </form>
                       </div>{" "}
                     </p>

@@ -1,8 +1,8 @@
 import React from "react";
-import year from './../../assets/year1.jpg'
-import one from './../../assets/one1.jfif'
+import year from './../../assets/10year.png'
+import one from './../../assets/qua.png'
 import gauge from './../../assets/gauge.png'
-import impact from './../../assets/impact2.png'
+import impact from './../../assets/impact.png'
 
 
 
@@ -98,11 +98,11 @@ const Content = () => {
         </div>
         <hr className="border-slate-500 ml-[5rem] w-[84rem]"/>
         <div className="hero mt-2">
-          <div className="grid grid-cols-4 gap-x-1 ">
-            <img src={year} alt="" />
-            <img className="mt-10" src={one} alt="" />
-            <img className="mt-[6rem] ml-2 h-[90px]" src={gauge} alt="" />
-            <img className="h-[150px] mt-[5rem]" src={impact} alt="" />
+          <div className="grid grid-cols-4 gap-x-[8rem]  ">
+            <img className="h-[165px] mt-[4rem] mb-2" src={year} alt="" />
+            <img className="h-[165px] mt-[4rem]" src={one} alt="" />
+            <img className="h-[170px] mt-[4rem] mb-2" src={gauge} alt="" />
+            <img className="h-[165px] mt-[4rem]" src={impact} alt="" />
           </div>
          
         </div>
