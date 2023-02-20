@@ -8,6 +8,7 @@ import Home from "../../pages/Home/Home";
 import payment from "../../pages/Payment/Payment";
 import logo from "../../assets/logo2.png";
 import "./navbar.css";
+import {FaCartPlus} from 'react-icons/fa'
 
 const Navbar = () => {
   return (
@@ -42,10 +43,10 @@ const Navbar = () => {
               </Link>
               <ul className="p-2 z-10 font-bold bg-slate-200 border-2	">
                 <li>
-                  <Link to="/product">Single Doors</Link>
+                  <Link to="/singledoors">Single Doors</Link>
                 </li>
                 <li>
-                  <Link to="/product"> Double Doors</Link>
+                  <Link to="/doubledoors"> Double Doors</Link>
                 </li>
                 <li>
                   <Link to="/product">Classic iron Door</Link>
@@ -66,11 +67,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        
+
         <div className="navbar-end">
-          <Link to="/payment" className="btn">
+          
+          <Link to="/payment" className="btn mr-[4rem]">
             Get a Free Quote
           </Link>
         </div>
+        
       </div>
     </div>
   );

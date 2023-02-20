@@ -11,6 +11,9 @@ import Payment from './pages/Payment/Payment';
 import ChatBot from './components/chatbot/ChatBot';
 import Whatsapp from './components/whatsapp/Whatsapp';
 import Faq from './pages/Faq/Faq';
+import SingleDoors from './pages/SingleDoor/SingleDoors';
+import DoubleDoors from './pages/DoubleDoor/DoubleDoors';
+import Classic from './pages/Classic/Classic';
 
 
 const Layout=()=>{
@@ -57,6 +60,18 @@ const router = createBrowserRouter([
           path:"/faq",
             element:<Faq/>
           },
+          {
+            path:"/singledoors",
+              element:<SingleDoors/>
+            },
+            {
+              path:"/doubledoors",
+                element:<DoubleDoors/>
+              },
+              {
+                path:"/classic",
+                  element:<Classic/>
+                },
   ]
   },
   

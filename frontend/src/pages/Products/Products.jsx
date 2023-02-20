@@ -57,7 +57,7 @@ const Products = () => {
           </p>
           <div className="grid grid-cols-2 gap-x-2 gap-y-4 mt-6 ml-[8rem] navbar-center">
             <a
-              href="#"
+              href="/doubledoors"
               class="flex flex-col items-center h-[25rem] w-[30rem] bg-slate-300 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-500  dark:hover:bg-gray-500"
             >
               <img
@@ -76,7 +76,7 @@ const Products = () => {
               </div>
             </a>
             <a
-              href="#"
+              href="/singledoors"
               class="flex flex-col items-center h-[25rem] w-[30rem] bg-slate-300 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-500  dark:hover:bg-gray-500"
             >
               <img
@@ -96,7 +96,7 @@ const Products = () => {
               </div>
             </a>
             <a
-              href="#"
+              href="/classic"
               class="flex flex-col items-center h-[25rem] w-[30rem] bg-slate-300 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-500  dark:hover:bg-gray-500"
             >
               <img

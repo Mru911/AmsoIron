@@ -1,0 +1,20 @@
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./../../assets/Contact.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 28rem;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+

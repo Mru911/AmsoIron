@@ -73,7 +73,7 @@ const Faq = () => {
                           <input className="formmrug border-black" type="email" name="user_email" placeholder="Email Id" />
 
                           <textarea name="message" id="" cols="10" rows="5" placeholder="Some message to company"> </textarea>
-                          <input className="btn btn-primary border-black" type="submit" value="Send" />
+                          <input  className="btn btn-primary border-black" type="submit" value="Send" />
                           <div className="row">{result ?  <Result/>: null }</div>
                         </form>
                       </div>{" "}

@@ -1,5 +1,6 @@
 import React from "react";
-import con1 from "./../../assets/conten.jpg";
+import con1 from "./../../assets/Contact.jpg";
+import './contactcon.css'
 
 const ContactCon = () => {
   return (
@@ -25,11 +26,11 @@ const ContactCon = () => {
           </div>
         </div>
       </div> */}
-      <div className="card ml-9 mb-[3rem] w-[90rem] h-[300px] bg-base-200 shadow-2xl mt-[3rem] ">
-        <figure className="object-fill  ">
-          {/* <img className="h-[1000px] w-[700px]" src={con1} /> */}
-        </figure>
-        <div className="card-body bg-slate-400">
+      {/* <div className="card ml-9 mb-[3rem] w-[90rem] h-[300px] bg-base-200 shadow-2xl mt-[3rem] ">
+        <div className="object-fill absolute top-0 w-full h-full z-10  ">
+          <img className="object-cover h-full w-full" src={con1} />
+        </div>
+        <div className=" z-20 card-body bg-slate-400">
           <h2 className="card-title text-center justify-center font-md text-md text-black mb-6">
             Its our pleasure to deliver the exact product you have imagined...
           </h2>
@@ -42,6 +43,15 @@ const ContactCon = () => {
             </a>
           </div>
         </div> 
+       </div> */}
+       <div className="hero-image rounded-xl">
+        <div className="hero-text">
+          <h2 className="text-center justify-center font-md text-md text-white mb-6">Its our pleasure to deliver the exact product you have imagined...</h2>
+          <p className="py-6 px-2 font-medium text-3xl text-white">Contact Us For Your Specific Requirement</p>
+          <a href="/contact" className="btn btn-primary ">
+              Contact Us
+            </a>
+        </div>
        </div>
     </div>
   );

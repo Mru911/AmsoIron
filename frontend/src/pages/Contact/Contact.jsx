@@ -1,11 +1,34 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useState,useRef } from "react";
 import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
+import emailjs from "@emailjs/browser";
+
 
 import { Checkbox } from "@material-ui/core";
 import "./contact.css";
+const Result = (props) =>{
+  return(
+    <p>Your message is sent successfully. We will contact You soon.</p>
+  )
+
+}
 
 const Contact = () => {
+  const [result,showResult]=useState();
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_p7l3nur', 'template_rs1isr6', form.current, 'XcySmgUQwU5EjNGdn')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset();
+      showResult(true);
+  };
   return (
     // <div className="contact">
       <Container className=" mt-7 mb-5">
@@ -54,7 +77,7 @@ const Contact = () => {
                 </div>
                 <div className="column">
                   <div className="contact-form">
-                    <form action="#">
+                    <form ref={form} onSubmit={sendEmail}>
                       <TextField
                         className="formmrug"
                         label=" Full Name"
@@ -110,48 +133,46 @@ const Contact = () => {
                       </label>
                       <br />
                       <label htmlFor="">Whatsapp</label>
-                      <Checkbox className="rounded" />
-                      <label htmlFor="">Email</label>
-                      <Checkbox />
+                      <Checkbox name="contact"  className="rounded" />
+                      <label  htmlFor="">Email</label>
+                      <Checkbox name="contact" />
                       <br />
                       <label className="mrugank5">
                         Project (Feel free to select more than one)
                       </label>
                       <br />
                       <label htmlFor="">Classic Iron Door</label>
-                      <Checkbox />
+                      <Checkbox name="category" />
                       <label htmlFor="">Contemporary Iron Door</label>
-                      <Checkbox />
+                      <Checkbox name="category"  />
                       <label htmlFor="">Gates and Fences</label>
-                      <Checkbox />
+                      <Checkbox name="category"  />
                       <label htmlFor="">Handrails and Railings</label>
-                      <Checkbox />
+                      <Checkbox name="category"  />
                       <label htmlFor="">Wine Cellar Door</label>
-                      <Checkbox />
+                      <Checkbox name="category"  />
                       <label htmlFor="">Custom project</label>
-                      <Checkbox />
+                      <Checkbox name="category"  />
                       <label htmlFor="">OTHER</label>
-                      <Checkbox />
+                      <Checkbox name="category"  />
                       <p className="contact-para">
                         Tell us more about your project (e.g. Single or Double
                         door, measurements, finishes, etc.){" "}
                       </p>
-                      <textarea
+                      <textarea 
+                       name="messageadditional"
                         className="textarea textarea-bordered w-[500px]"
                         placeholder="Additional Information"
                         required
                         autoComplete="off"
                       ></textarea>
                       <br />
-                      <p className="mrugank5">Photo of your area</p>
+                      <p className="mrugank5 mt-3">Photo of your area</p>
                       <input type="file" className="file-input mb-2 " />
                       <br />
-                      <input
-                        className="btn"
-                        type="submit"
-                        value="Send"
-                        variant="contained"
-                      />
+                    <input  className="btn btn-primary border-black" type="submit" value="Send" />
+                    <div className="row">{result ?  <Result/>: null }</div>
+
                     </form>
                   </div>
                 </div>
@@ -180,12 +201,3 @@ const Contact = () => {
 };
 
 export default Contact;
-// import React from 'react'
-
-// const Contact = () => {
-//   return (
-//     <div>Contact</div>
-//   )
-// }
-
-// export default Contact
