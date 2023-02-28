@@ -34,16 +34,17 @@ const About = () => {
           <div className="hero-content text-center">
             <div className="max-w-xl">
               <p className="font-medium  text-xl ">
-                Established in 2020 Amso Impex is a Iron Works manufacturing company which provides hand-crafted doors and gates 
-                with tema of 37 highly skilled metal workers and iron forgers.
+                Established in 2020 Amso Impex is a Iron Works manufacturing
+                company which provides hand-crafted doors and gates with tema of
+                37 highly skilled metal workers and iron forgers.
               </p>
             </div>
           </div>
           <div className="mission flex flex-col-2 gap-3.5 justify-center mt-3">
-            <div className="card w-96 bg-slate-400 adow-xl justify-center items-center  ">
+            <div className="card w-96 bg-slate-300 adow-xl justify-center items-center  ">
               <div className="card-body justify-center">
-                <h2 className="card-title justify-center">Our Mission </h2>
-                <p>
+                <h2 className="card-title justify-center font-medium text-black">Our Mission </h2>
+                <p className="text-black">
                   Select a standard configuration or draw your own. The
                   possibilities are only limited by your imagination. We accept
                   any type of refer- ence ideas and willing to turn them into
@@ -51,10 +52,10 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div class="card w-96 bg-slate-400 shadow-xl text-md">
+            <div class="card w-96 bg-slate-300 shadow-xl text-md">
               <div class="card-body">
-                <h2 class="card-title justify-center">What we Do</h2>
-                <p>
+                <h2 class="card-title justify-center font-medium text-black">What we Do</h2>
+                <p className="text-black">
                   Custom built and Quality iron doors. We bring with us 37
                   highly skilled metal workers & iron forgers whom have a deep
                   understanding of forginf iron.

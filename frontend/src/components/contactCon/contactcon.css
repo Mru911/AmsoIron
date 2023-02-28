@@ -1,20 +1,74 @@
-.hero-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./../../assets/Contact.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+.main-image{
+    position: relative;
+    background: url('./../../assets/Contact.jpg') no-repeat center;
     background-size: cover;
-    height: 28rem;
-    width: 80rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 7rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    height: 500px;
+    
+    overflow: hidden;
+    
+
+}
+.containerc1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight:700 ;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+
+}
+.containerc1 h1{
+    margin: 0;
+    font-size: 50px;
+}
+.containerc1 h1 span{
+    border: 2px solid #17C3B2;
+    padding: 6px 14px;
+    display: inline-block;
+
+}
+.cen{
+    margin: 20px;
+    display: block;
+    font-size: 26px;
 }
 
-
-
-
-
-
+.contactbutton1 {
+    border-radius: 2px;
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: white;
+   }
+   
+   .contactbutton1::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .contactbutton1:hover::before {
+    width: 105%;
+   }
+   
+   .contactbutton1:hover {
+    color: #111;
+   }

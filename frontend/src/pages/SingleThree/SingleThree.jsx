@@ -1,22 +1,21 @@
-
 import React from "react";
-import "./double.css";
+import "./../SingleTwo/Two.css";
+import sp1 from "./../../assets/21.png";
 
-
-const DoubleDoors = () => {
+const SingleThree = () => {
   return (
     <div class="hero3">
       <div class="row3">
         <div class="col3">
           <div class="slider3">
             <div class="preview1">
-              <img src={require("./../../assets/3.png")} id="imagebox" alt="" />
+              <img src={require('./../../assets/22.png')} id="imagebox" alt="" />
             </div>
           </div>
         </div>
         <div class="col">
           <div class="content">
-            <h2>Double Door #1</h2>
+            <h2>Single Door #2</h2>
 
             <p className="mb-[20px]">
               <h3 className="text-md font-semibold">Enter the Details:</h3>
@@ -75,4 +74,4 @@ const DoubleDoors = () => {
   );
 };
 
-export default DoubleDoors;
+export default SingleThree;

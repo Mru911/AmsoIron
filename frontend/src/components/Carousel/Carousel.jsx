@@ -102,7 +102,7 @@ const Carousel = () => {
               <img className="object-cover h-full w-full" src={bg} alt="" />
             </div>
 
-            <div className="absolute h-full w-full bg-black/70"></div>
+            <div className="absolute h-full w-full bg-black/40"></div>
           </SwiperSlide>
         );
       })}

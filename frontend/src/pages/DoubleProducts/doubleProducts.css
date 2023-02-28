@@ -1,0 +1,157 @@
+/* .spcontainer{
+    margin: 30px;
+  
+    
+
+}
+.sprow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.spimage{
+    position: relative;
+    flex: 1;
+    max-width: 560px;
+    height: 600px;
+    margin: 20px;
+    overflow: hidden;
+
+}
+.spimage img{
+    opacity: 0.8;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+}
+.spimage:hover img{
+ opacity: 1;
+}
+.spimage .details{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+
+}
+.spimage .details h2{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 70px;
+}
+.spimage .details h2 span{
+    font-weight: 900;
+
+}
+.spimage:hover .details h2{
+    transform: translate(-30px);
+
+}
+.more{
+    
+    position: absolute;
+    background: darkgray;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    bottom: -70px;
+    transition: 0.6s;
+    transition-property: bottom;
+}
+.spimage:hover .more{
+    bottom: 0;
+}
+.more .read-more{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+@media (max-width:1080px) {
+    .spimage{
+        flex: 100%;
+        max-width: 480px;
+    }
+    
+}
+@media (max-width:400px) {
+   .more .read-more{
+        font-size: 18px;
+    }
+    
+} */
+
+.gridsd{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-gap: 2.5rem;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+.spcard{
+    display: block;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+   
+
+} 
+
+.spcard-conten{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0 0 0/60%);
+    color: white;
+    height: 20%;
+    width: 100%;
+    padding: 2.2rem 0;
+    overflow: hidden;
+    transition: 0.7s;
+
+
+}
+.spcard-conten h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.spimages1 img{
+    display: block;
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+
+}
+.spcard-conten:hover{
+    height: 40%;
+    transition: 0.7s;
+
+}
+@media (max-width:1024px){
+    .gridsd{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:767px){
+    .gridsd{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,145 +1,126 @@
 import React from "react";
-import { Fragment } from "react";
 import Container from "@material-ui/core/Container";
-import "./products.css";
-import Lottie from "lottie-react";
 
-import fp8 from "../../assets/13.png";
-import fp9 from "../../assets/30.png";
-import fp10 from "../../assets/31.png";
-import fp11 from "../../assets/32.png";
-import fp12 from "../../assets/23.png";
-import fp13 from "../../assets/19.png";
-import doorAnimate from "./../../assets/animation/134213-door.json";
-
-
-import Logo from "./../../assets/logo1.jpeg";
-               
+import fp1 from "../../assets/30.png";
+import fp2 from "../../assets/6.png";
+import fp3 from "../../assets/19.png";
+import fp4 from "../../assets/20.png";
+import fp5 from "../../assets/29.png";
+import fp6 from "../../assets/30.png";
+import fp7 from "../../assets/27.png";
 
 const Products = () => {
   return (
-    <Container className="mt-7 mb-5">
-      <Fragment>
+    <Container className="mb-5">
+      <div className="fpro">
         <section className="contact">
           <div className="contact-heading">
-            <h2>Our featured Products</h2>
-          </div>
-          <div className="mission flex flex-col-2 gap-3.5 justify-center">
-            <div className="card w-96 bg-base-100 shadow-xl justify-center items-center">
-              <div className="card-body justify-center">
-                <h2 className="card-title justify-center">Our Moto</h2>
-                <p>
-                  "Your new entry will create the first impression of your home.
-                  Whether homeowner builder, architect or designer, let Amso
-                  Impex' passion for beautiful products help you on your
-                  journey."
-                </p>
-              </div>
-            </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-              <div class="card-body">
-                <h2 class="card-title justify-center">
-                  Turn your Thoughts Into Reality
-                </h2>
-                <p>
-                  Customize your thoughts and design into reality manufactured
-                  by our skilled workers. We are committd to the client and
-                  providing for their needs. Featured throughout big cities in
-                  many historic buildings.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-2xl font-semibold mt-6">
-            Our products are Hand-Crafted with the finest steel, exterior
-            artisian paints and engineered glass
-          </p>
-          <div className="grid grid-cols-2 gap-x-2 gap-y-4 mt-6 ml-[8rem] navbar-center">
-            <a
-              href="/doubledoors"
-              class="flex flex-col items-center h-[25rem] w-[30rem] bg-slate-300 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-500  dark:hover:bg-gray-500"
-            >
-              <img
-                className="object-cover w-full ml-2 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                src={fp8}
-                alt=""
-              />
-              <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                  Double Doors
-                </h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-800 text-xl">
-                  Click To Check the various categories suitable for your House
-                </p>
-                
-              </div>
-            </a>
-            <a
-              href="/singledoors"
-              class="flex flex-col items-center h-[25rem] w-[30rem] bg-slate-300 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-500  dark:hover:bg-gray-500"
-            >
-              <img
-                className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                src={fp9}
-                alt=""
-              />
-              <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                  Single Doors
-                </h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-800 text-xl">
-                Click To Check the various categories suitable for your House
-
-                </p>
-                
-              </div>
-            </a>
-            <a
-              href="/classic"
-              class="flex flex-col items-center h-[25rem] w-[30rem] bg-slate-300 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-500  dark:hover:bg-gray-500"
-            >
-              <img
-                className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                src={fp10}
-                alt=""
-              />
-              <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                  Classic Iron Doors
-                </h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-800 text-xl">
-                Click To Check the various categories suitable for your House
-
-                </p>
-                
-              </div>
-            </a>
-            <a
-              href="#"
-              class="flex flex-col items-center h-[25rem] w-[30rem] bg-slate-300 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-500  dark:hover:bg-gray-500"
-            >
-              <img
-                className="object-cover ml-2 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                src={fp13}
-                alt=""
-              />
-              <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                  Contemporary Iron Doors
-                </h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-800 text-xl">
-                Click To Check the various categories suitable for your House
-
-                </p>
-                
-              </div>
-            </a>
+            <h2>Our Quality Products</h2>
           </div>
         </section>
-      </Fragment>
-      <Lottie className="h-[50rem]" animationData={doorAnimate} loop={true} />
+      </div>
 
+      <div class="flex min-h-screen items-center justify-center bg-neutral-800">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2">
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-xl">
+            <div class="h-97 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src={fp1}
+                alt=""
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">
+                Single Doors
+              </h1>
+              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Description about single doors
+              </p>
+              <a
+                href="/singleproducts"
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400"
+              >
+                See More
+              </a>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-xl">
+            <div class="h-97 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src={fp3}
+                alt=""
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">
+                Double Doors
+              </h1>
+              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Description about Double doors
+              </p>
+              <a
+                href="/doubleproducts"
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400"
+              >
+                See More
+              </a>
+            </div>
+          </div>
+
+          <div class="group relative cursor-pointer items-center rounded-xl justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-97 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src={fp5}
+                alt=""
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">
+                Customized Doors
+              </h1>
+              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Description about Customized doors
+              </p>
+              <a
+                href="/products"
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400"
+              >
+                See More
+              </a>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer rounded xl items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-97 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src={fp4}
+                alt=""
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">
+                Wine Cellar Doors
+              </h1>
+              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Description about Wine Cellar doors
+              </p>
+              <a
+                href="/products"
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60 bg-slate-400"
+              >
+                See More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </Container>
   );
 };

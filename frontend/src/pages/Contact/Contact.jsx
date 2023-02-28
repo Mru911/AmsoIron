@@ -39,7 +39,7 @@ const Contact = () => {
               <h2>Contact-Us To get free estimate</h2>
             </div>
             <div className="containerc">
-              <div className="row">
+              <div className="row1">
                 <div className="column">
                   <div className="contact-widget">
                     <div className="contact-widget-item">

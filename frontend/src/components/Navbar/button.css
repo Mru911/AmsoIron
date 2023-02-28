@@ -1,19 +1,3 @@
-/* .logo{
-    position: relative;
-    height: 150px;
-    width: 100px;
-} */
-.logo2{
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: auto;
-
-   
-}
-.button2{
-    background-color: rgb(96 165 250);
-}
 .paymentBtn {
     padding: 0.8em 1.8em;
     border: 2px solid black;
@@ -50,4 +34,3 @@
    .paymentBtn:hover {
     color: #111;
    }
-   

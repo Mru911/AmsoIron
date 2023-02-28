@@ -37,7 +37,7 @@ const FeaturedProducts = () => {
             <div class="h-97 w-72">
               <img
                 class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                src={fp1}
+                src={fp4}
                 alt=""
               />
             </div>
@@ -104,7 +104,7 @@ const FeaturedProducts = () => {
           <div class="h-97 w-72">
               <img
                 class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                src={fp4}
+                src={fp1}
                 alt=""
               />
             </div>
