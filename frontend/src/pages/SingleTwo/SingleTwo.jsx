@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./Two.css";
-import sp1 from "./../../assets/21.png";
+
 
 const SingleTwo = () => {
   return (

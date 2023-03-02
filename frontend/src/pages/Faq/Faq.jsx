@@ -2,8 +2,7 @@ import React, { Fragment, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import Container from "@material-ui/core/Container";
-import TextField from "@material-ui/core/TextField";
-import catalog from "./../../assets/amosImpex.pdf";
+
 
 const Result = (props) =>{
   return(

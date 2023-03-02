@@ -1,6 +1,5 @@
 import React from "react";
 import "./../SingleTwo/Two.css";
-import sp1 from "./../../assets/21.png";
 
 const SingleThree = () => {
   return (
